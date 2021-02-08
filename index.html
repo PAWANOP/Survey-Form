@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+  	  <h1 id="title">Good Vibes Form</h1> 
+  	  <div class="master-div-style">
+  	  	<p id="description">Tell us something positive that happened to you today.</p>
+
+  	  	<form id="survey-form" action="/do-something">
+  	  		<div class="form-rows">
+  	  			 <div class="labels">
+  	  			   <label for="name" id="name-label">Name</label>
+  	  			 </div>
+
+  	  			 <div class="fields">
+  	  			   <input type="text" id="name" class="input-fields" required placeholder="Enter your name">
+  	  			 </div>
+  	  		</div>
+
+  	  		<div class="form-rows">
+  	  			<div class="labels">
+  	  				 <label for="email" id="email-label">Email</label>
+  	  			</div>
+
+  	  			<div class="fields">
+  	  				 <input type="email" id="email" class="input-fields" required placeholder="Enter your email address">
+  	  			</div>
+  	  		</div>
+
+  	  		<div class="form-rows">
+  	  			<div class="labels">
+  	  				 <label for="number" id="number-label">On a scale of 1-10, how good was it?</label>
+  	  			</div>
+
+  	  			<div class="fields">
+  	  				 <input type="number" id="number"  class="input-fields" min="1" max="10" placeholder="Enter a number between 1 and 10">
+  	  			</div>
+  	  		</div>
+       
+            <div class="form-rows">
+            	  <div class="labels">
+            	  	 <label for="dropdown" id="dropdown-label">Where did it happen?</label>
+            	  </div>
+
+            	  <div class="fields">
+            	  	  
+                      <select name="Location of positive event" id="dropdown" class="dropdown">
+                      	<option value="home">At home</option>
+                      	<option value="commute">On my commute</option>
+                      	<option value="work">At work</option>
+                      	<option value="outside">On the street</option>
+                      	<option value="other">Other</option>
+                      </select>
+
+            	  </div>
+             </div>
+            	  <div class="form-rows">
+            	  	  <div class="labels">
+            	  	  	 <label for="time-of-day">At what time of day did it happen?</label>
+            	  	  </div>
+
+            	  	  <div class="fields">
+            	  	  	  <ul id="time-of-day" style="list-style: none;">
+            	  	  	  	 <li class="radio">
+            	  	  	  	  <label>
+                               <input type="radio" name="time-radio"
+                               value="1"
+                               class="user-selection">
+            	  	  	  	  </label>Morning	
+            	  	  	  	 </li>
+
+            	  	  	  	 <li class="radio">
+            	  	  	  	  <label>
+                               <input type="radio" name="time-radio"
+                               value="2"
+                               class="user-selection">
+            	  	  	  	  </label>Afternoon
+            	  	  	  	 </li>
+
+            	  	  	  	 <li class="radio">
+            	  	  	  	 	<label>
+                                <input type="radio" name="time-radio" value="3"
+                                class="user-selection">
+            	  	  	  	 	</label>Evening
+            	  	  	  	 </li>
+            	  	  	  </ul>
+            	  	  </div>
+            	  </div>
+
+                 <div class="form-rows">
+                 	
+                     <div class="labels">
+                     	 <label for="feelings">What emotions did you experience?
+                                     <br>
+                              (Select all that apply)</label>
+                     </div>
+
+                     <div class="fields">
+                     	 <ul id="feelings" style="list-style: none;">
+
+                     	 	<li class="radio">
+                     	 		<label>
+                     	 			<input type="checkbox" name="feeling-check" class="user-selection" value="1">Excited
+                     	 		</label>
+                     	 	</li>
+
+                     	 	<li class="radio">
+                     	 		<label>
+                     	 			<input type="checkbox" name="feeling-check" class="user-selection" value="2">Humbled
+                     	 		</label>
+                     	 	</li>
+
+                     	 	<li class="radio">
+                     	 		<label>
+                     	 			<input type="checkbox" name="feeling-check" class="user-selection" value="3">Elated
+                     	 		</label>
+                     	 	</li>
+
+                     	 	<li class="radio"> <label>
+                     	 		<input type="checkbox" name="feeling-check" class="user-selection" value="4">Loved
+                     	 	</label></li>
+
+                     	 	<li class="radio"> <label>
+                     	 		<input type="checkbox" name="feeling-check" class="user-selection" value="5">Enthusiastic
+                     	 	</label></li>
+                     	 </ul>
+                     </div>
+
+                 </div>
+
+                 <div class="form-rows">
+                 	  <div class="labels">
+                 	  	<label for="event-details">
+                 	  		Please describe your positive experience.
+                 	  	</label>
+                 	  </div>
+
+                 	  <div class="fields">
+                 	  	 <textarea id="event-details" class="input-fields" style="height: 50px;
+                 	  	 resize: vertical;
+                 	  	 font-family: Open Sans Condensed;" name="event-details" cols="1" rows="1"></textarea>
+                 	  </div>
+                 </div>
+
+                 <button class="button" id="submit" type="submit">
+                 	Submit
+                 </button>
+
+  	  	</form>
+  	  </div>
+  </main>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
